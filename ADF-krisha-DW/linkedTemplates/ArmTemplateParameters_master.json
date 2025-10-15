@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-krisha-DW"
+		},
+		"Snowflake1_password": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"LS_Snowflake_SAS_sasUri": {
+			"value": ""
+		},
+		"Snowflake1_properties_typeProperties_database": {
+			"value": "@{linkedService().Database}"
+		},
+		"Snowflake1_properties_typeProperties_role": {
+			"value": "@{linkedService().Role}"
+		},
+		"Snowflake1_properties_typeProperties_host": {
+			"value": "@{linkedService().Host}"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "@{linkedService().FullyQualifiedDomainName}"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "DAMG7370FALL2025"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "@{linkedService().Username}"
+		},
+		"ls_azure_key_vault_properties_typeProperties_baseUrl": {
+			"value": "https://krisha-keyvault.vault.azure.net/"
+		},
+		"ls_azure_storage_blob_properties_typeProperties_serviceEndpoint": {
+			"value": "https://krishastoragedamg.blob.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
